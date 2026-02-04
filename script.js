@@ -14,7 +14,7 @@ document.getElementById("astroForm").addEventListener("submit", async (e) => {
     const messageDiv = document.getElementById("message");
 
     try {
-        const res = await fetch("https://smithra28.app.n8n.cloud/webhook-test/Astro", {
+        const res = await fetch("https://smithra28.app.n8n.cloud/webhook/Astro", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify
@@ -33,3 +33,4 @@ document.getElementById("astroForm").addEventListener("submit", async (e) => {
         console.error(error);
     }
 });
+
